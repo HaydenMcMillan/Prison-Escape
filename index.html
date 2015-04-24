@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prison Escape 1.0</title>
+
+ 	<script src="jquery-1.9.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="prison.js" type="text/javascript"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+<div class="overlayBg"></div>
+<div class="overlay">
+<p> Welcome to Rocksville Maximum Security Prison. <br><br>
+You have been jailed for <span class="crime"></span> 
+Your sentence is <span class="sentence"></span>. <br><br>
+You can either complete your sentence or attempt to escape.
+<br><br>
+<button class="button" id="begin">Begin Sentence</button>
+</p>
+</div>
+<div class="endDead">
+<p>You have died.<br><br>
+Your score is <span class="score"></span><br><br>
+<button class="button" id="restartA">Restart</button>
+</p>
+</div>
+<div class="endEscape">
+<p>
+You use the shiv to pick the lock on your cell.<br><br>
+The plans show a weak spot in the yard fence.<br><br>
+Using the rope, you climb over the wall to freedom!<br><br>
+Your score is <span class="score"></span><br><br>
+<button class="button" id="restartB">Restart</button>
+</p>
+</div>
+<div class="endFail">
+<p>
+You have attempted to escape, but guards spotted you.<br><br>
+You are captured and stripped of all items and cigs.<br><br>
+<button class="button" id="restartC">Continue</button>
+</p>
+</div>
+<div class="endViolence">
+<p>
+A massacre has occured at Rocksville Prison<br><br>
+Your score is <span class="score"></span><br><br>
+<button class="button" id="restartD">Restart</button>
+</p>
+</div>
+<div class="endReleased">
+<p>
+You completed your sentence.<br><br>
+Your score is <span class="score"></span><br><br>
+<button class="button" id="restartD">Restart</button>
+</p>
+</div>
+
+<div id="container">
+<h1>Prison Escape</h1>
+	<div class="sideBar">
+        <div class="clockText"><span>Day</span> </div>
+    	<div class="stats">
+        <ul>
+        	<li class="title">Sentence</li>
+            <li class="sentence"></li>
+            <li class="title">Health</li>
+            <li class="health"></li>
+            <li class="title">Cigarettes</li>
+            <li class="cigs"></li>
+            <li class="title">Danger level</li> 
+            <li class="danger"></li>      
+        </ul>
+        </div>
+        <br>
+        <button class="leftButton" id="sleep">Sleep</button>
+        <button class="leftButton" id="escape">Attempt escape</button>
+        <button class="leftButton" id="trouble">Cause trouble</button>
+    </div>
+    <div class="main">
+        <div class="talk">
+            <div class="dialogue"></div>
+        </div>
+        <div class="inventory">
+        <div class="test"></div>
+        <h1>Inventory</h1>
+         <ul>
+        	<li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+            <li class="item"> </li>
+         </ul>
+        </div>
+        <div class="actions">
+            <div class="buy">
+            <button class="button" id="buyBread">Buy bread - 1 cig</button><br>
+            <button class="button" id="buyFruit">Buy fruit - 5 cigs</button><br>
+            <button class="button" id="buyPaper">Buy paper - 10 cigs</button><br>
+            <button class="button" id="buyPen">Buy pen - 20 cigs</button><br>
+            <button class="button" id="buyShiv">Buy shiv - 50 cigs</button><br>
+            <button class="button" id="buyCell">Buy cellphone - 100 cigs</button><br>
+            </div>
+            <div class="buy">
+            <button class="buttonHidden" id="makeWine">make wine</button><br>
+            <button class="buttonHidden" id="makeLetter">write letter</button><br>
+            <button class="buttonHidden" id="makeWeed">Smuggle weed</button><br>
+            <button class="buttonHidden" id="makePlans">Smuggle floor plans</button><br>
+            <button class="buttonHidden" id="makePills">Smuggle pills</button><br>
+            <button class="buttonHidden" id="makeRope">Smuggle rope</button><br>
+
+            </div>
+            <div class="sell">
+            <h1>Drag items here to sell</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

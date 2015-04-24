@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#container{
+	border:1px solid #000;
+	width:950px;
+	height:570px;
+	margin:0px auto;
+	margin-top:50px;
+}
+
+.actions{
+	border:1px solid #000;
+	height:250px;
+	margin-left:15px;
+}
+
+.buy{
+	display:inline-block;
+	width:200px;	
+}
+
+.button, .buttonHidden{
+	width:170px;
+	height:30px;
+	border:1px solid #000;
+	background-color:#FFF;
+	margin:5px 0 5px 10px;
+}
+
+.buttonHidden{
+	display:none;	
+}
+
+.sell{
+	width:230px;
+	height:220px;
+	border:1px solid #000;	
+	float:right;
+	margin:10px 10px 0 0;
+}
+
+.clockText{
+	width:95%;
+	border:1px solid #000;
+	height:30px;
+	margin-bottom:15px;
+	padding:5px;
+}
+
+.dialogue{
+	width:690px;
+	height:140px;
+	float:left;
+	border:1px solid #000;	
+	margin:0 0 0 15px;
+	overflow:hidden;
+}
+.endDead, .endEscape, .endFail, .endViolence, .endReleased{
+	display:none;	
+}
+
+.filled p{
+	display:none;	
+}
+
+.inventory{
+	height:125px;
+}
+
+.inventory ul, .stats ul{
+	margin:0 0 0 -25px;
+	padding-top:15px;
+}
+
+.item, .filled{
+	width:70px;
+	height:70px;
+	border:1px solid #000;
+	list-style-type:none;
+	display:inline-block;
+	margin-right:5px;
+}
+li.item .ui-draggable{
+	z-index:-999 !important;	
+}
+
+.leftButton{
+	width:190px;
+	height:30px;
+	border:1px solid #000;
+	background-color:#FFF;
+	margin:5px 0 5px 0;
+}
+
+li{
+	list-style-type:none;
+}
+
+.main{
+	width:75%;
+	height:100%;
+	float:right;
+}
+
+.overlay, .endDead, .endEscape, .endFail, .endViolence, endReleased{
+	width:550px;
+	height:280px;
+	position:absolute;	
+	border:1px solid #000;
+	top:150px;
+	left:30%;
+	background-color:#FFF;
+	z-index:999;
+}
+
+.overlayBg{
+	width:99%;
+	height:600px;
+	background-color:#FFF;
+	position:absolute;
+	opacity:0.7;
+}
+
+.overlay p,.endDead p, .endEscape p, .endFail p, .endViolence p, .endReleased p {
+	margin:50px 0 0 50px;	
+}
+
+.picture{
+	width:250px;
+	height:140px;
+	display:inline-block;
+	border:1px solid #000;	
+	margin:0 0 0 15px;
+}
+
+.sideBar, .main{
+	padding:10px;	
+}
+
+.sentence, .health, .cigs, .danger{
+	margin:5px 0 10px 0;
+}
+
+.sideBar{
+	width:20%;
+	height:100%;
+	display:inline-block;
+}
+
+.smallBox{
+	width:70px;
+	display:inline-block;
+	margin:5px;
+	float:left;	
+}
+
+.stats{
+	height:310px;
+	border:1px solid #000;	
+}
+
+.talk{
+	height:150px;
+	margin:0px auto;
+}
+
+.title{
+	font-weight:bold;	
+}
+
+h1{
+	font-size:15px;
+	margin: 0 0 0 15px;	
+}
